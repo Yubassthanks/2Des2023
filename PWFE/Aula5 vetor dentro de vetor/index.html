@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Mátricula</th>
+                <th>Setor</th>
+                <th>Comissão ganha</th>
+                <th>Total de vendas</th>
+            </tr>
+        </thead>
+    </table>
+    <br><br>
+
+    <label for="vendor">Vendedor:</label>
+    <select id="vendor">
+        <option value="Cecilia Martins">Cecilia Martins</option>
+        <option value="Joaquim Souza">Joaquim Souza</option>
+        <option value="Vitoria da Cruz">Vitoria da Cruz</option>
+    </select>
+    <label for="date">Data:</label>
+    <input type="date" id="date">
+    <label for="value">Valor:</label>
+    <input type="number" id="value" placeholder="R$:">
+    <input type="submit" onclick="add(vendor, value)">
+
+    <script src="script.js"></script>
+</body>
+
+</html>
